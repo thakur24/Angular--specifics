@@ -1,0 +1,22 @@
+<div class="card h-200">
+      <a href="#">
+        <img class="card-img-top" [src]="productData.image" alt="">
+      </a>
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="#">{{productData.id}}</a>
+        </h4>
+        <h5>{{productData.price}}</h5>
+        <p class="card-text">
+          {{productData.description}}
+        </p>
+      </div>
+      <div class="card-footer">
+          <small class="text-muted">★ ★ ★ ★ ☆</small>
+          <div class="btn-group" style="float: right">
+            <button type="button" routerLink="/editproduct" class="btn btn-primary">EDIT</button>
+            <button type="button" (click)="deleteObj(productObj)" class="btn btn-primary">Delete</button>
+      </div>
+    </div>
+  </div>
+  
